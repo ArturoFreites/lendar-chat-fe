@@ -9,9 +9,9 @@ export default function useChatStream(
     const eventSourceRef = useRef<EventSource | null>(null);
 
     useEffect(() => {
-        if (!applicationId) return;
 
-        const url = `http://localhost:8080/backoffice/api/chat/${applicationId}/stream`;
+        if (!applicationId) return;
+        const url = `${import.meta.env.VITE_API_BASE_URL}/chat/${applicationId}/stream`;
         const eventSource = new EventSource(url);
 
         eventSource.addEventListener("stream:ready", (event) => {
