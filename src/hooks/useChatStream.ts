@@ -11,7 +11,7 @@ export default function useChatStream(
     useEffect(() => {
 
         if (!applicationId) return;
-        const url = `${import.meta.env.BE_URL}/chat/${applicationId}/stream`;
+        const url = `${import.meta.env.VITE_BE_URL}/chat/${applicationId}/stream`;
         const eventSource = new EventSource(url);
 
         eventSource.addEventListener("stream:ready", (event) => {
