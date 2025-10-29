@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+
+    --color-brand-cyan-50: #e8fafa;
+    --color-brand-cyan-100: #d1f5f5;
+    --color-brand-cyan-200: #a3ebeb;
+    --color-brand-cyan-300: #75e1e1;
+    --color-brand-cyan-400: #54c4c4;
+    --color-brand-cyan-500: #46a8a8;
+    --color-brand-cyan-600: #398c8c;
+    --color-brand-cyan-700: #2c7070;
+    --color-brand-cyan-800: #205454;
+    --color-brand-cyan-900: #143838;
+    --color-brand-cyan-950: #0b2020;
+}
